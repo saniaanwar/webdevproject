@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sania Anwar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: lightpink;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slideshow {
+      flex: 1;
+      position: relative;
+    }
+
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade 15s infinite;
+    }
+
+    .slideshow img:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .slideshow img:nth-child(2) {
+      animation-delay: 3s;
+    }
+
+    .slideshow img:nth-child(3) {
+      animation-delay: 6s;
+    }
+
+    .slideshow img:nth-child(4) {
+      animation-delay: 9s;
+    }
+
+    .slideshow img:nth-child(5) {
+      animation-delay: 12s;
+    }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .textbox {
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px 30px;
+      border-radius: 10px;
+      z-index: 2;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .textbox h1 {
+      font-size: 4rem;
+      margin: 0;
+      color: lightpink;
+    }
+
+    .textbox p {
+      font-size: 1.5rem;
+      margin: 15px 0 0;
+      color: black;
+    }
+
+    .links {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .link-box {
+      padding: 15px 25px;
+      background-color: lightblue;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .link-box:hover {
+      transform: scale(1.1);
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="slideshow">
+      <img src="sania1.jpg" alt="Slide 1">
+      <img src="sania2.jpg" alt="Slide 2">
+      <img src="sania3.jpg" alt="Slide 3">
+      <img src="sania4.jpg" alt="Slide 4">
+      <img src="sania5.jpg" alt="Slide 5">
+    </div>
+
+    <div class="textbox">
+      <h1>SANIA ANWAR</h1>
+      <p>Hi! I’m Sania, a final-year student at VIT, studying Computer Science and Engineering with a minor in Business Systems. Welcome to my portfolio and get to know more about me!
+</p>
+      <div class="links">
+        <a href="hobbies.html" class="link-box">Hobbies</a>
+        <a href="travel.html" class="link-box">Travel</a>
+        <a href="ask.html" class="link-box">Ask</a>
+        <a href="contact.html" class="link-box">Contact</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

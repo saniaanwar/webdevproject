@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 80%;
+      margin: auto;
+    }
+
+    .image-grid div {
+      text-align: center;
+    }
+
+    .image-grid img {
+      width: 300px; 
+      height: 400px; 
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .image-grid p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .links {
+      margin-top: 20px; 
+      display: flex;
+      gap: 15px;
+      padding-bottom: 20px;
+    }
+
+    .link-box {
+      padding: 10px 20px;
+      background-color: darkred;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .link-box:hover {
+      transform: scale(1.1);
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>HOBBIES</h1>
+
+  <div class="image-grid">
+    <div>
+      <img src="hobby1.jpg" alt="Hobby 1">
+      <p>Adventuring</p>
+      <p>I love exploring new places, and this picture is from an unforgettable dune buggy ride in Dubai. It was a very cool experience and I can't wait to try it again sometime!</p>
+    </div>
+    <div>
+      <img src="hobby3.jpg" alt="Hobby 3">
+      <p>Photography</p>
+      <p>Photography has always been a passion of mine, capturing moments that tell stories. This particular shot is from a recent aurora sighting in Ohio, my hometown, a truly magical experience.</p>
+    </div>
+    <div>
+      <img src="hobby2.jpg" alt="Hobby 2">
+      <p>Hiking</p>
+      <p>Hiking allows me to connect with nature and discover breathtaking views. I enjoy finding new trails, each hike leading me to a hidden gem of natural beauty.</p>
+    </div>
+    <div>
+      <img src="hobby4.jpg" alt="Hobby 4">
+      <p>Can eating be a hobby?</p>
+      <p>Trying new foods wherever I go is more than just a necessity—it's a hobby! I love exploring different cuisines and savoring the unique flavors each culture has to offer.</p>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="index.html" class="link-box">Home</a>
+    <a href="travel.html" class="link-box">Travel</a>
+    <a href="ask.html" class="link-box">Ask</a>
+    <a href="contact.html" class="link-box">Contact</a>
+  </div>
+</body>
+</html>

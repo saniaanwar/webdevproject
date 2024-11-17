@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .contact-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      max-width: 800px;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .image-container {
+      margin-right: 30px;
+    }
+
+    .image-container img {
+      width: 300px; 
+      height: 300px; 
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .text-container {
+      font-size: 1.2rem;
+    }
+
+    .text-container p {
+      margin-bottom: 10px;
+    }
+
+    .social-links {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social-links a img {
+      width: 25px; 
+      height: 25px; 
+    }
+
+    .social-links a:hover {
+      color: lightblue;
+    }
+
+
+    .links {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .link-box {
+      padding: 10px 20px;
+      background-color: darkred;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .link-box:hover {
+      transform: scale(1.1);
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CONTACT ME</h1>
+
+  <div class="contact-container">
+    <div class="image-container">
+      <img src="contactme.jpg" alt="img">
+    </div>
+    <div class="text-container">
+      <p>Feel free to contact me anytime! :) I look forward to getting to know you!</p>
+      <p>Email: sania.anwar100@gmail.com</p>
+      <p>Phone: +91 123 4567</p>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sania-anwar" target="_blank" aria-label="LinkedIn">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://x.com" target="_blank" aria-label="Twitter">
+          <img src="x.jpg" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <img src="insta.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/saniaanwar" target="_blank" aria-label="GitHub">
+          <img src="git.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="index.html" class="link-box">Home</a>
+    <a href="hobbies.html" class="link-box">Hobbies</a>
+    <a href="travel.html" class="link-box">Travel</a>
+    <a href="ask.html" class="link-box">Ask Me</a>
+  </div>
+
+</body>
+</html>
+

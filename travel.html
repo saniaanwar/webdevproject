@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+
+    h1 img {
+      margin-left: 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .scrolling-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scrolling-images {
+      display: flex;
+      gap: 20px;
+      animation: scroll 20s linear infinite;
+    }
+
+    .scrolling-images img {
+      width: 300px;
+      height: 450px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .paragraph {
+      text-align: center;
+      margin: 20px;
+      font-size: 1.2rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 15px;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .link-box {
+      padding: 10px 20px;
+      background-color: darkred;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .link-box:hover {
+      transform: scale(1.1);
+      background-color: crimson;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    TRAVEL
+    <img src="airplane.png" alt="Airplane">
+  </h1>
+
+  <div class="scrolling-container">
+    <div class="scrolling-images">
+      <img src="travel1.jpg" alt="Travel 1">
+      <img src="travel2.jpg" alt="Travel 2">
+      <img src="travel3.jpg" alt="Travel 3">
+      <img src="travel4.jpg" alt="Travel 4">
+      <img src="travel5.jpg" alt="Travel 5">
+      <img src="travel6.jpg" alt="Travel 6">
+      <img src="travel7.jpg" alt="Travel 7">
+      <img src="travel8.jpg" alt="Travel 8">
+      <img src="travel9.jpg" alt="Travel 9">
+      <img src="travel10.jpg" alt="Travel 10">
+      <img src="travel11.jpg" alt="Travel 11">
+      <img src="travel12.jpg" alt="Travel 12">
+      <img src="travel13.jpg" alt="Travel 13">
+    </div>
+  </div>
+
+  <p class="paragraph">
+    I absolutely love traveling and discovering new places. Every trip feels like an adventure, with new cultures, food, and memories waiting to be made. One day, I hope to explore every corner of the world and see everything it has to offer.
+  </p>
+
+  <div class="links">
+    <a href="index.html" class="link-box">Home</a>
+    <a href="hobbies.html" class="link-box">Hobbies</a>
+    <a href="ask.html" class="link-box">Ask Me</a>
+    <a href="contact.html" class="link-box">Contact</a>
+  </div>
+</body>
+</html>
